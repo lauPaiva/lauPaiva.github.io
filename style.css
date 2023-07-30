@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
+/* Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+.contenedor{
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Header/Nav */
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.nav__ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.2rem 0rem;
+    width: 100%;
+    list-style:none;
+    background-color: #0e1116;
+}
+.nav__li{
+    border-right: 1px solid #9e7b9b;
+    width: 100%;
+    text-align: center;
+}
+.nav__a{
+    position: relative;
+    text-decoration: none;
+    color: #F7F4F3;
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.9s;
+    
+}
+.nav__a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9e7b9b;
+    transition: 0.5s;
+}
+.nav__a:hover{
+    color: #9e7b9b;
+    transition: 0.5s;
+}
+.nav__a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+/* Inicio */
+#inicio{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-color: #d54949;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inicio-section__cartel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color:#F7F4F3;
+    height: 70%;
+    background-color: #0e1116;
+    border-radius: 0 0 5rem 5rem;
+    padding-bottom: 5.5rem;
+}
+.inicio-section__imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+    padding: 0 6rem;
+}
+.inicio-section__img{
+    border-radius: 50%;
+    border: .8rem solid #9e7b9b;
+}
+.inicio-section__h1{
+    font-size: 6rem;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: .2rem;
+}
+.inicio-section__h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+.inicio-section__a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+.inicio-section__i{
+    padding: 0.8rem;
+    font-size: 2.5rem;
+    border: 1px solid #F7F4F3;
+    border-radius: 100%;
+    transition: .5s;
+}
+.inicio-section__i:hover{
+    background-color: #9e7b9b;
+    transition: .5s;
+}
+/* Sobre mí */
+#sobremi{
+    height: 100vh;
+    background-color: #0e1116;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F7F4F3;
+    font-size: 2rem;
+}
+.sobremi-section__info{
+    width: 35%;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.sobremi-section__h2{
+    font-family: 'Tektur', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 5.5rem;
+    
+}
+.sobremi-section__datos{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.sobremi-section__h3{
+    font-family: 'Tektur', cursive;
+    margin: 0 0 3rem .6rem;
+    font-size: 3.5rem;
+    font-weight:lighter;
+}
+.sobremi-section__ul{
+    list-style: none;
+    margin-left: .6rem;
+    cursor: default;
+}
+.sobremi-section__li{
+    margin-bottom: .8rem;
+}
+.sobremi-section__strong{
+    display: inline-block;
+    width: 15rem;
+    color: #9e7b9b;
+}
+.sobremi-section__li:hover{
+    text-decoration: underline;
+}
+.sobremi-section__li:hover .sobremi-section__strong{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sobremi-section__cont2{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+.sobremi-section__h3--cont2{
+    grid-column: span 3;
+}
+.sobremi-section__aficiones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: #4d5061;
+    border-radius: 1rem;
+    margin: 0 .6rem 1.2rem .6rem;
+    transition: .5s;
+}
+.sobremi-section__aficiones:hover{
+    background-color: #9e7b9b;
+    cursor: default;
+    transition: .5s;
+}
+.sobremi-section__i{
+    margin-bottom: .5rem;
+}
+
+
+
